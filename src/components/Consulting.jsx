@@ -44,7 +44,7 @@ const Consulting = () => {
                 sm:text-3xl 
                 md:text-5xl 
                 lg:text-5xl 
-                font-light 
+                font-bold 
                 leading-snug 
                 md:leading-tight 
                 text-amber-200
@@ -58,8 +58,8 @@ const Consulting = () => {
                 text-3xl 
                 sm:text-4xl 
                 md:text-6xl 
-                lg:text-5xl 
-                font-extrabold 
+                lg:text-4xl 
+                font-bold 
                 leading-relaxed 
                 md:leading-tight 
                 text-white 
@@ -68,7 +68,7 @@ const Consulting = () => {
               "
               >
                 Nosotros te asesoramos
-                <br className="block sm:hidden" />
+                <br />
                 para darte el que deseas
               </h2>
 

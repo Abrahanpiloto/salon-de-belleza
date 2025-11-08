@@ -5,7 +5,7 @@ const ServicesGrid = () => {
     <section className="w-full min-h-screen">
       <div className="grid grid-cols-3 grid-rows-2 gap-0">
         {/* ---- CUADRO 1 IMAGEN ----- */}
-        <div className="h-68">
+        <div className="h-68 bg-green-300">
           {/* imagen desktop */}
           <img
             src="/servicio-peluqueria.jpg"
@@ -63,7 +63,7 @@ const ServicesGrid = () => {
       </div>
 
       {/* === MÉTRICAS === */}
-      <div className="w-full h-82 justify-center items-center flex bg-neutral-900 text-white py-10">
+      {/* <div className="w-full h-82 justify-center items-center flex bg-neutral-900 text-white py-10">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           <div>
             <div className="text-2xl font-bold">571</div>
@@ -85,7 +85,7 @@ const ServicesGrid = () => {
             <p className="text-sm text-gray-400">BEAUTY STYLES</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
