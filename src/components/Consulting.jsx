@@ -6,34 +6,102 @@ const Consulting = () => {
       className="relative w-full h-[90vh] bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/consulting3.jpg')" }}
     >
-      {/* Overlay oscuro */}
+      {/* Overlay opcional */}
       {/* <div className="absolute inset-0 bg-black/40"></div> */}
 
-      <div className="relative z-10 h-full flex items-center justify-end px-36 md:px-16">
-        {/* ----- Texto ----- */}
-        <div className="max-w-sm">
-          <div className="space-y-1 md:space-y-12 lg:space-x-5 lg:space-y-1 max-h-[70vh] md:max-h-[80vh] overflow-hidden">
-            <h1 className="lg:text-4xl text-xl md:text-6xl font-light leading-tight text-amber-200">
-              ¿Quieres un nuevo look?
-            </h1>
+      <div className="relative z-10 h-full flex items-center">
+        {/* Contenedor principal: móvil = derecha, desktop = derecha (pero con margen) */}
+        <div
+          className="
+          w-full 
+          px-6 
+          md:px-16 
+          lg:px-30 
+          flex 
+          justify-end
+        "
+        >
+          <div className="w-full max-w-md">
+            {/* Texto: más vertical y espaciado SOLO en móvil */}
+            <div
+              className="
+              /* Espaciado vertical: más en móvil */
+              space-y-4 
+              md:space-y-6 
+              lg:space-y-6
 
-            <h2 className="lg:text-5xl text-white text-2xl md:text-7xl font-extrabold leading-tight mt-2">
-              Nosotros te asesoramos para darte el que deseas
-            </h2>
+              /* Alineación: derecha en móvil, derecha en desktop */
+              text-right
 
-            {/* <h3 className="text-4xl md:text-6xl font-light leading-tight mt-2">
-            PARA TU
-          </h3>
+              /* Padding para no pegar al borde en móvil */
+              pr-2 
+              md:pr-0
+            "
+            >
+              <h1
+                className="
+                text-2xl 
+                sm:text-3xl 
+                md:text-5xl 
+                lg:text-5xl 
+                font-light 
+                leading-snug 
+                md:leading-tight 
+                text-amber-200
+              "
+              >
+                ¿Quieres un nuevo look?
+              </h1>
 
-          <h4 className="text-4xl md:text-6xl font-semibold leading-tight mt-2 text-amber-200">
-            CABELLO
-          </h4> */}
+              <h2
+                className="
+                text-3xl 
+                sm:text-4xl 
+                md:text-6xl 
+                lg:text-5xl 
+                font-extrabold 
+                leading-relaxed 
+                md:leading-tight 
+                text-white 
+                mt-4 
+                md:mt-6
+              "
+              >
+                Nosotros te asesoramos
+                <br className="block sm:hidden" />
+                para darte el que deseas
+              </h2>
 
-            <div className="w-32 h-0.5 bg-amber-200 mt-4"></div>
+              <div
+                className="
+                w-24 
+                h-0.5 
+                bg-amber-200 
+                mt-2 
+                md:mt-2 
+                ml-auto
+              "
+              ></div>
 
-            <button className="cursor-pointer mt-10 px-4 py-3 bg-white text-black font-semibold rounded-md hover:bg-amber-200 transition">
-              Conoce más
-            </button>
+              <div className="flex justify-end mt-8 md:mt-4">
+                <button
+                  className="
+                  px-6 
+                  py-3 
+                  bg-white 
+                  text-black 
+                  font-semibold 
+                  rounded-md 
+                  hover:bg-amber-200 
+                  transition 
+                  text-sm 
+                  sm:text-base
+                "
+                >
+                  Conoce más
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
