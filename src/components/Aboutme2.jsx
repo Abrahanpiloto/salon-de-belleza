@@ -23,7 +23,7 @@ const Aboutme = () => {
           alt="Sandra Haro, fundadora de Sandra Haro, en uno de sus salones"
           className="absolute inset-0 w-full h-full object-cover -z-10"
         />
-        <div className="relative z-10 max-w-lg bg-black bg-opacity-80 p-10 rounded-lg text-white space-y-6 ml-8 lg:ml-20">
+        <div className="relative z-10 max-w-lg bg-black opacity-90 p-10 rounded-lg text-white space-y-6 ml-8 lg:ml-20">
           <h1 className="text-3xl lg:text-4xl font-light text-amber-200 leading-tight">
             ¡Conoce a Sandra, la visión detrás de Sandra Haro!
           </h1>
