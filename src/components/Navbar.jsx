@@ -7,16 +7,21 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full shadow-md z-50 ">
-      <div className="max-w-7xl mx-auto bg-black flex items-center justify-between px-4 py-3 lg:py-4">
+      <div className="max-w-9xl mx-auto bg-black flex items-center justify-between px-4 py-3 lg:py-4">
         {/* --- Mobile: hamburguesa (izquierda) --- */}
         <button
           className="lg:hidden cursor-pointer  transition-transform duration-300"
           onClick={() => {
-            console.log("👉 Click detectado, estado previo:", isOpen);
             setIsOpen(!isOpen);
           }}
+          aria-label={
+            isOpen ? "Cerrar menú de navegación" : "Abrir menú de navegación"
+          }
+          aria-expanded={isOpen}
+          aria-controls="mobile-menu"
         >
           <GiHamburgerMenu
+            aria-hidden="true"
             className={`text-2xl text-amber-200 transition-transform duration-300 ${
               isOpen ? "rotate-90" : "rotate-0"
             }`}
@@ -36,7 +41,7 @@ export default function Navbar() {
 
         {/* --- Links centro (solo visible en lg) --- */}
         <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 text-md text-amber-200">
-          <a href="/about" className="hover:text-[#5683A0]">
+          <a href="/sobre-mi" className="hover:text-[#5683A0]">
             ¿Quién soy?
           </a>
           <a href="/store" className="hover:text-[#5683A0]">

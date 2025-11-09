@@ -3,7 +3,7 @@ import React from "react";
 import ServicesGrid from "../components/ServicesGrid";
 import Consulting from "../components/Consulting";
 import Hero3 from "../components/Hero3";
-import InfoWhy from "../components/InfoWhy";
+import InfoWhy2 from "../components/InfoWhy2";
 import LayoutMain from "../components/LayoutMain";
 import Navbar from "../components/Navbar";
 
@@ -14,7 +14,7 @@ const HomePage = () => {
         <Hero3 />
         <ServicesGrid />
         <Consulting />
-        <InfoWhy />
+        <InfoWhy2 />
       </LayoutMain>
     </div>
   );
