@@ -9,12 +9,14 @@ const ServicesGrid = () => {
           {/* imagen desktop */}
           <img
             src="/servicio-peluqueria.jpg"
+            alt="chica cabello fantasia"
             className="hidden sm:block object-cover"
           />
 
           {/* imagen mobile */}
           <img
             src="/servicio-peluqueria-large.jpg"
+            alt="chica cabello fantasia"
             className="w-full h-full object-cover block sm:hidden"
           />
         </div>
@@ -35,7 +37,11 @@ const ServicesGrid = () => {
 
         {/* ----- CUADRO 3 IMAGEN ALARGADA ----- */}
         <div className="bg-blue-400 row-span-2">
-          <img src="/propietaria.jpg" className="w-full h-full object-cover" />
+          <img
+            src="/propietaria.jpg"
+            alt="Sandra Haro propietaria"
+            className="w-full h-full object-cover"
+          />
         </div>
         <div className="bg-green-300 flex flex-col justify-center items-center p-6">
           <p className="lg:text-3xl text-white font-bold tracking-widest">
@@ -57,6 +63,7 @@ const ServicesGrid = () => {
         <div className="bg-pink-400">
           <img
             src="/lavado-cabello.jpg"
+            alt="lavado de cabello masaje"
             className="w-full h-full object-cover"
           />
         </div>

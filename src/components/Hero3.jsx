@@ -18,7 +18,7 @@ const Hero3 = () => {
       <div className="absolute inset-0 bg-black/60"></div>
 
       {/* LOGO SOLO EN MÓVIL - CENTRADO EN PANTALLA */}
-      <div className="md:hidden absolute top-8 left-1/2 -translate-x-1/2 z-20 pointer-events-none w-full">
+      {/* <div className="md:hidden absolute top-8 left-1/2 -translate-x-1/2 z-20 pointer-events-none w-full">
         <div className="w-86 h-32 mx-auto">
           <img
             src="/logo-mobile.png"
@@ -26,7 +26,7 @@ const Hero3 = () => {
             className="w-full h-full object-contain"
           />
         </div>
-      </div>
+      </div> */}
 
       {/* Contenedor principal con Grid para desktop */}
       <div className="relative z-10 h-full flex items-center px-6 md:px-12 lg:px-26">
