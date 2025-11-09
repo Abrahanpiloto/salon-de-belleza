@@ -2,7 +2,7 @@ import React from "react";
 
 const InfoWhy = () => {
   return (
-    <div className="grid grid-cols-4 grid-rows-1 gap-0 overflow-x-auto snap-x snap-mandatory">
+    <div className="grid grid-cols-4 grid-rows-1 gap-0">
       <div className="h-[280px] snap-center bg-gray-900 text-white px-8 flex flex-col items-start justify-center overflow-hidden">
         <h1 className="text-2xl font-bold">
           <span className="font-light">¿Porque debes venir</span> <br /> a
@@ -20,8 +20,7 @@ const InfoWhy = () => {
         </h1>
         <p className="text-sm text-gray-700">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit minus
-          corporis distinctio sit repellat nam rem sed. Consequuntur, repellat.
-          Aperiam vitae magnam.
+          corporis distinctio sit repellat nam rem sed.
         </p>
       </div>
       <div className="h-[280px] snap-center bg-rose-400 flex flex-col items-start px-8 justify-center gap-2 overflow-hidden">
@@ -34,8 +33,7 @@ const InfoWhy = () => {
         </h1>
         <p className="text-sm text-gray-700">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit minus
-          corporis distinctio sit repellat nam rem sed. Consequuntur, repellat.
-          Aperiam vitae magnam.
+          corporis distinctio sit repellat nam rem sed.
         </p>
       </div>
       <div className="h-[280px] snap-center bg-amber-200 flex flex-col items-start px-8 justify-center gap-2 overflow-hidden">
@@ -48,8 +46,7 @@ const InfoWhy = () => {
         </h1>
         <p className="text-sm text-gray-700">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit minus
-          corporis distinctio sit repellat nam rem sed. Consequuntur, repellat.
-          Aperiam vitae magnam.
+          corporis distinctio sit repellat nam rem sed.
         </p>
       </div>
     </div>

@@ -4,15 +4,18 @@ import ServicesGrid from "../components/ServicesGrid";
 import Consulting from "../components/Consulting";
 import Hero3 from "../components/Hero3";
 import InfoWhy from "../components/InfoWhy";
+import LayoutMain from "../components/LayoutMain";
+import Navbar from "../components/Navbar";
 
 const HomePage = () => {
   return (
     <div>
-      {/* <Hero /> */}
-      <Hero3 />
-      <ServicesGrid />
-      <Consulting />
-      <InfoWhy />
+      <LayoutMain>
+        <Hero3 />
+        <ServicesGrid />
+        <Consulting />
+        <InfoWhy />
+      </LayoutMain>
     </div>
   );
 };
