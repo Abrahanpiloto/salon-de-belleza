@@ -7,6 +7,9 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
-    outDir: "dist", // Carpeta de salida
+    outDir: "dist",
+    assetsInclude: ["**/_redirects"],
   },
+
+  publicDir: "public",
 });
