@@ -105,7 +105,13 @@ const InfoWhy2 = () => {
                 `}
                   onClick={() => !isFirst && toggle(item.id)}
                 >
-                  <h1 className="text-xl font-semibold">{item.title}</h1>
+                  <h1
+                    className={`font-semibold ${
+                      isFirst ? "text-2xl text-center w-full" : "text-xl"
+                    }`}
+                  >
+                    {item.title}
+                  </h1>
 
                   {/* Icono (solo si puede abrirse) */}
                   {item.desc && (
