@@ -38,7 +38,7 @@ const ServicesGrid = () => {
         {/* ----- CUADRO 3 IMAGEN ALARGADA ----- */}
         <div className="bg-blue-400 row-span-2">
           <img
-            src="/propietaria.jpg"
+            src="/propietaria-mobile.jpg"
             alt="Sandra Haro propietaria"
             className="w-full h-full object-cover"
           />

@@ -6,8 +6,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-black shadow-md z-50 opacity-70">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-3 lg:py-4">
+    <nav className="fixed top-0 left-0 w-full shadow-md z-50 ">
+      <div className="max-w-7xl mx-auto bg-black flex items-center justify-between px-4 py-3 lg:py-4">
         {/* --- Mobile: hamburguesa (izquierda) --- */}
         <button
           className="lg:hidden cursor-pointer  transition-transform duration-300"
@@ -17,7 +17,7 @@ export default function Navbar() {
           }}
         >
           <GiHamburgerMenu
-            className={`text-2xl transition-transform duration-300 ${
+            className={`text-2xl text-amber-200 transition-transform duration-300 ${
               isOpen ? "rotate-90" : "rotate-0"
             }`}
           />
@@ -37,7 +37,7 @@ export default function Navbar() {
         {/* --- Links centro (solo visible en lg) --- */}
         <div className="hidden lg:flex absolute left-1/2 transform -translate-x-1/2 space-x-8 text-md text-amber-200">
           <a href="/about" className="hover:text-[#5683A0]">
-            Nosotros
+            ¿Quién soy?
           </a>
           <a href="/store" className="hover:text-[#5683A0]">
             Servicios
@@ -70,26 +70,38 @@ export default function Navbar() {
       {/* --- Mobile: menú desplegable --- */}
 
       <div
-        className={`lg:hidden bg-[#e2a555] w-full px-4 overflow-hidden transition-all duration-500 ease-in-out ${
-          isOpen ? "max-h-60 opacity-100 py-3" : "max-h-0 opacity-0 py-0"
+        className={`lg:hidden bg-black w-full px-4 overflow-hidden transition-all duration-500 ease-in-out ${
+          isOpen ? "max-h-60  py-3" : "max-h-0 opacity-0 py-0"
         }`}
       >
-        <a href="/about" className="block hover:text-[#5683A0] py-2">
-          Nosotros
+        <a
+          href="/sobre-mi"
+          className="block text-amber-200 hover:text-white py-2"
+        >
+          ¿Quién soy?
         </a>
-        <a href="/store" className="block hover:text-[#5683A0] py-2">
-          Tienda
+        <a href="/store" className="block text-amber-200 hover:text-white py-2">
+          Servicios
         </a>
-        <a href="/contact" className="block hover:text-[#5683A0] py-2">
+        <a
+          href="/contact"
+          className="block text-amber-200 hover:text-white py-2"
+        >
+          Galería
+        </a>
+        <a
+          href="/contact"
+          className="block text-amber-200 hover:text-white py-2"
+        >
           Contacto
         </a>
 
-        <button className="relative mt-2">
+        {/* <button className="relative mt-2">
           <FaCartShopping className="text-2xl" />
           <span className="absolute -top-2 -right-3 bg-red-500 text-xs px-1.5 py-0.5 rounded-full">
             0
           </span>
-        </button>
+        </button> */}
       </div>
     </nav>
   );
