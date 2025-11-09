@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesGrid = () => {
   return (
-    <section className="w-full min-h-screen">
+    <section className="w-full">
       <div className="grid grid-cols-3 grid-rows-2 gap-0">
         {/* ---- CUADRO 1 IMAGEN ----- */}
         <div className="h-68 bg-green-300">
@@ -61,31 +61,6 @@ const ServicesGrid = () => {
           />
         </div>
       </div>
-
-      {/* === MÉTRICAS === */}
-      {/* <div className="w-full h-82 justify-center items-center flex bg-neutral-900 text-white py-10">
-        <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          <div>
-            <div className="text-2xl font-bold">571</div>
-            <p className="text-sm text-gray-400">BEAUTY STYLES</p>
-          </div>
-
-          <div>
-            <div className="text-2xl font-bold">984</div>
-            <p className="text-sm text-gray-400">HAIR CUTTING</p>
-          </div>
-
-          <div>
-            <div className="text-2xl font-bold">395</div>
-            <p className="text-sm text-gray-400">MAKE UP</p>
-          </div>
-
-          <div>
-            <div className="text-2xl font-bold">571</div>
-            <p className="text-sm text-gray-400">BEAUTY STYLES</p>
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 };
