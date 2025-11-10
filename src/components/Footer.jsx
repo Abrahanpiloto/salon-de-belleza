@@ -20,7 +20,7 @@ export default function Footer() {
       </div>
       <div className="flex-1 flex justify-end gap-2">
         <a
-          href="https://instagram.com"
+          href=""
           target="_blank"
           rel="noopener noreferrer"
           className="text-white hover:text-pink-500"

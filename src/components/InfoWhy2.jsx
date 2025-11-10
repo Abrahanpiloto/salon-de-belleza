@@ -107,7 +107,9 @@ const InfoWhy2 = () => {
                 >
                   <h1
                     className={`font-semibold ${
-                      isFirst ? "text-2xl text-center w-full" : "text-xl"
+                      isFirst
+                        ? "text-2xl text-center w-full"
+                        : "text-xl text-start"
                     }`}
                   >
                     {item.title}
