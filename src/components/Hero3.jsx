@@ -34,13 +34,13 @@ const Hero3 = () => {
           {/* COLUMNA IZQUIERDA: Texto */}
           <div className="text-white max-w-lg ">
             <div className="space-y-1 md:space-y-2 lg:space-y-1">
-              <h1 className="text-4xl md:text-5xl font-light leading-tight text-amber-200">
+              <h1 className="text-4xl md:text-4xl font-light leading-tight text-amber-200">
                 El Mejor
               </h1>
-              <h1 className="text-4xl md:text-5xl font-light leading-tight text-amber-200">
+              <h1 className="text-4xl md:text-4xl font-light leading-tight text-amber-200">
                 Cuidado
               </h1>
-              <h2 className="text-5xl md:text-6xl font-extrabold leading-tight mt-2">
+              <h2 className="text-5xl md:text-5xl font-extrabold leading-tight mt-2">
                 PROFE
                 <br />
                 SIONAL
@@ -48,7 +48,7 @@ const Hero3 = () => {
               <h3 className="text-4xl md:text-4xl font-light leading-tight mt-2">
                 PARA TU
               </h3>
-              <h4 className="text-4xl md:text-6xl font-semibold leading-tight mt-2 text-amber-200">
+              <h4 className="text-4xl md:text-5xl font-semibold leading-tight mt-2 text-amber-200">
                 CABELLO
               </h4>
               <div className="w-32 h-0.5 bg-amber-200 mt-4"></div>

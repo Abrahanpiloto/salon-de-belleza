@@ -5,7 +5,8 @@ import Consulting from "../components/Consulting";
 import Hero3 from "../components/Hero3";
 import InfoWhy2 from "../components/InfoWhy2";
 import LayoutMain from "../components/LayoutMain";
-import Navbar from "../components/Navbar";
+
+import Galery from "../components/Galery";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <ServicesGrid />
         <Consulting />
         <InfoWhy2 />
+        <Galery />
       </LayoutMain>
     </div>
   );
