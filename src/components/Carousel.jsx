@@ -184,7 +184,7 @@ export default function Carousel({
         round
           ? "rounded-full border border-white"
           : "rounded-md border-4 border-gray-800"
-      }`}
+      } w-full max-w-[400px]`}
       style={{
         width: `${baseWidth}px`,
         ...(round && { height: `${baseWidth}px` }),

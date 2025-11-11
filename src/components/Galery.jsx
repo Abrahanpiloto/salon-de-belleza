@@ -4,7 +4,7 @@ import ServiceList from "./ServiceList";
 
 const Galery = () => {
   return (
-    <div className="bg-gray-800 min-h-screen">
+    <div className="bg-gray-800 min-h-screen overflow-x-hidden">
       <header className="bg-black flex items-center justify-center py-4">
         <h1 className="text-amber-200 text-3xl">Galería</h1>
       </header>
