@@ -17,7 +17,7 @@ const Galery = () => {
           <div style={{ height: "600px", position: "relative" }}>
             <Carousel
               baseWidth={400}
-              autoplay={true}
+              autoplay={false}
               autoplayDelay={3000}
               pauseOnHover={true}
               loop={true}

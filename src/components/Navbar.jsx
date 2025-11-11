@@ -89,7 +89,7 @@ export default function Navbar() {
             Galería
           </a>
           <a href="/contact" className="hover:text-[#5683A0]">
-            Contacto
+            Contacto/Ubicaciones
           </a>
         </div>
 

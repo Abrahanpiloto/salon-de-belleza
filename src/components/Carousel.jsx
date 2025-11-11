@@ -66,6 +66,13 @@ const DEFAULT_ITEMS = [
     icon: <FiCode className="h-4 w-4 text-white" />,
     image: "/tinte-2-colores.jpg",
   },
+  {
+    title: "Common UI",
+    description: "Common UI components are coming soon!",
+    id: 9,
+    icon: <FiCode className="h-4 w-4 text-white" />,
+    image: "/californiano.jpg",
+  },
 ];
 
 const DRAG_BUFFER = 0;
