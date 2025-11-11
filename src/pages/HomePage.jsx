@@ -5,8 +5,8 @@ import Consulting from "../components/Consulting";
 import Hero3 from "../components/Hero3";
 import InfoWhy2 from "../components/InfoWhy2";
 import LayoutMain from "../components/LayoutMain";
-
 import Galery from "../components/Galery";
+import Contact from "../components/Contact";
 
 const HomePage = () => {
   return (
@@ -17,6 +17,7 @@ const HomePage = () => {
         <Consulting />
         <InfoWhy2 />
         <Galery />
+        <Contact />
       </LayoutMain>
     </div>
   );
