@@ -4,7 +4,10 @@ import ServiceList from "./ServiceList";
 
 const Galery = () => {
   return (
-    <div className="bg-gray-700 min-h-screen overflow-x-hidden">
+    <section
+      id="galeria"
+      className="bg-gray-700 min-h-screen overflow-x-hidden"
+    >
       <header className="bg-black flex items-center justify-center py-4">
         <h1 className="text-amber-200 text-3xl">Galería</h1>
       </header>
@@ -30,7 +33,7 @@ const Galery = () => {
           <ServiceList />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

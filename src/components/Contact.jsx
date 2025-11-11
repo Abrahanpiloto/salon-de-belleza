@@ -4,7 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 export default function Contact() {
   function AddressCard({ district, address, phone }) {
     return (
-      <div className="bg-black p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-amber-200 lg:backdrop-blur-sm opacity-80">
+      <div className="bg-black p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-white lg:backdrop-blur-sm opacity-80">
         <h3 className="text-xl font-semibold text-amber-200 mb-2">
           {district}
         </h3>
@@ -34,7 +34,7 @@ export default function Contact() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Título */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white lg:text-white flex items-center justify-center gap-2">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white lg:text-white flex items-baseline justify-center gap-2">
             Contáctanos <FaMapMarkerAlt />
           </h2>
           <p className="mt-3 text-md text-amber-200 ">

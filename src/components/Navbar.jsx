@@ -82,10 +82,35 @@ export default function Navbar() {
           <a href="/sobre-mi" className="hover:text-[#5683A0]">
             ¿Quién soy?
           </a>
-          <a href="/store" className="hover:text-[#5683A0]">
+          {/* <a href="/store" className="hover:text-[#5683A0]">
             Servicios
-          </a>
-          <a href="/contact" className="hover:text-[#5683A0]">
+          </a> */}
+          <a
+            href="/#galeria"
+            onClick={(e) => {
+              // Si estás en otra página, deja que el href navegue
+              if (window.location.pathname !== "/") {
+                return; // Deja que el navegador navegue a /#galeria
+              }
+              // Si estás en home, haz scroll suave
+              e.preventDefault();
+              document
+                .getElementById("galeria")
+                ?.scrollIntoView({ behavior: "smooth" });
+              setIsOpen(false);
+            }}
+            // href="/#galeria"
+            // onClick={(e) => {
+            //   e.preventDefault();
+            //   const element = document.getElementById("galeria");
+            //   if (element) {
+            //     element.scrollIntoView({ behavior: "smooth" });
+            //   }
+
+            //   setIsOpen(false);
+            // }}
+            className="hover:text-[#5683A0]"
+          >
             Galería
           </a>
           <a href="/contact" className="hover:text-[#5683A0]">
@@ -123,11 +148,23 @@ export default function Navbar() {
         >
           ¿Quién soy?
         </a>
-        <a href="/store" className="block text-amber-200 hover:text-white py-2">
+        {/* <a href="/store" className="block text-amber-200 hover:text-white py-2">
           Servicios
-        </a>
+        </a> */}
         <a
-          href="/contact"
+          href="/#galeria"
+          onClick={(e) => {
+            // Si estás en otra página, deja que el href navegue
+            if (window.location.pathname !== "/") {
+              return; // Deja que el navegador navegue a /#galeria
+            }
+            // Si estás en home, haz scroll suave
+            e.preventDefault();
+            document
+              .getElementById("galeria")
+              ?.scrollIntoView({ behavior: "smooth" });
+            setIsOpen(false);
+          }}
           className="block text-amber-200 hover:text-white py-2"
         >
           Galería
