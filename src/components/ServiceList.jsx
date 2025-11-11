@@ -27,7 +27,7 @@ export default function ServicesList() {
             className="group flex items-center space-x-3 px-4 py-2 bg-white/5 backdrop-blur-sm border border-amber-200/20 rounded-xl transition-all duration-300 hover:bg-amber-200/10 hover:border-amber-200/40 hover:shadow-lg hover:shadow-amber-200/10"
           >
             <div className="w-2 h-2 bg-amber-200 rounded-full group-hover:scale-150 transition-transform duration-300 shrink-0" />
-            <span className="text-amber-100 text-sm font-medium group-hover:text-white transition-colors">
+            <span className="text-amber-100 text-md font-medium group-hover:text-white transition-colors">
               {service}
             </span>
           </div>
