@@ -15,7 +15,7 @@ const DEFAULT_ITEMS = [
     description: "Cool text animations for your projects.",
     id: 1,
     icon: <FiFileText className="h-4 w-4 text-white" />,
-    image: "/rubia1.jpg",
+    image: "/rubia1.webp",
   },
   {
     title: "Animations",
