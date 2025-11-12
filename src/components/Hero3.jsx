@@ -6,7 +6,7 @@ const Hero3 = () => {
     <section className="relative w-full h-[90vh] min-h-screen overflow-hidden">
       <picture className="absolute inset-0 w-full h-full -z-10">
         <img
-          src="/hair-banner.jpg"
+          src="/hair-banner.webp"
           alt="Profesional estilista atendiendo a una cliente en un salón moderno — imagen que transmite cuidado profesional del cabello"
           className="w-full h-full object-cover object-center"
           loading="eager" /* hero: prioridad inmediata */
