@@ -181,9 +181,7 @@ export default function Carousel({
     <div
       ref={containerRef}
       className={`relative overflow-hidden p-4 ${
-        round
-          ? "rounded-full border border-white"
-          : "rounded-md border-4 border-gray-700"
+        round ? "rounded-full border border-white" : "rounded-md"
       } w-full max-w-[400px]`}
       style={{
         width: `${baseWidth}px`,

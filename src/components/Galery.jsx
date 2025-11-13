@@ -4,17 +4,22 @@ import ServiceList from "./ServiceList";
 
 const Galery = () => {
   return (
-    <section
-      id="galeria"
-      className="bg-gray-700 min-h-screen overflow-x-hidden"
-    >
+    <section id="galeria" className=" relative overflow-hidden min-h-screen">
+      {/* Fondo SOLO en desktop */}
+      <div className="absolute inset-0 -z-10">
+        <img
+          src="/fondo-galeria.jpg"
+          alt="Equipo profesional en oficinas modernas de Lima - Sedes en La Molina, Miraflores, San Miguel, Jesús María y San Isidro"
+          className="w-full h-full object-cover object-center"
+          loading="lazy"
+        />
+        {/* Overlay con 60% de opacidad para ver la imagen */}
+        <div className="absolute inset-0 bg-black/90"></div>
+      </div>
       <header className="bg-black flex items-center justify-center py-4">
-        <h1 className="text-amber-200 text-3xl">Galería</h1>
+        <h1 className="text-white text-3xl">Galería</h1>
       </header>
 
-      {/* <p className="flex justify-center items-center text-3xl mt-28 text-gray-700">
-        Proximamente...
-      </p> */}
       <div className="flex flex-col md:flex-row lg:gap-2 items-center justify-center py-14 px-4">
         <div className="w-full md:w-auto flex justify-center">
           <div style={{ height: "600px", position: "relative" }}>
@@ -29,7 +34,7 @@ const Galery = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-auto flex justify-center h-[600px]">
+        <div className="w-full md:w-auto flex justify-center h-[750px]">
           <ServiceList />
         </div>
       </div>
