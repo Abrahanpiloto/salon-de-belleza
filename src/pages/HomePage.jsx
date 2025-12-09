@@ -31,7 +31,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <LayoutMain>
         <Hero3 />
         <ServicesGrid />

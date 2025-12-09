@@ -68,10 +68,14 @@ const Hero3 = () => {
               </section>
 
               {/* BOTÓN SOLO EN MÓVIL (se oculta en desktop) */}
-              <div className="md:hidden mt-6">
-                <button className="px-8 py-3 bg-white text-black font-semibold rounded-md hover:bg-amber-200 transition ">
+              <div href="/reservar" className="md:hidden mt-6">
+                <a
+                  href="/reservar"
+                  className="px-16 py-3 bg-[#7BF1A8] text-black text-2xl rounded-4xl 
+               hover:bg-white transition shadow-lg cursor-pointer"
+                >
                   Agenda aquí
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -89,9 +93,13 @@ const Hero3 = () => {
               </div>
 
               {/* BOTÓN DEBAJO DEL LOGO (solo en desktop) */}
-              <button className="px-10 py-2 bg-amber-200 text-black font-bold text-lg rounded-md hover:bg-white transition shadow-lg cursor-pointer">
+              <a
+                href="/reservar"
+                className="px-16 py-3 bg-[#7BF1A8] text-black text-2xl rounded-4xl 
+               hover:bg-white transition shadow-lg cursor-pointer"
+              >
                 Agenda aquí
-              </button>
+              </a>
             </div>
           </div>
         </div>

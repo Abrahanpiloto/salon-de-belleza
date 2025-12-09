@@ -15,7 +15,7 @@ const services = [
 
 export default function ServicesList() {
   return (
-    <div className="w-full max-w-xl mx-auto lg:max-w-xl lg:w-full lg:flex-1 py-12">
+    <div className="w-full max-w-xl mx-auto lg:max-w-xl lg:w-full lg:flex-1">
       <h1 className="text-3xl text-amber-200 mb-6 text-center">
         Algunos de nuestros Servicios
       </h1>

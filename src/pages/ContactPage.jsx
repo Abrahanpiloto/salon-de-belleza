@@ -4,7 +4,7 @@ import LayoutMain from "../components/LayoutMain";
 
 const ContactPage = () => {
   return (
-    <div>
+    <div className="">
       <LayoutMain>
         <Contact />
       </LayoutMain>
