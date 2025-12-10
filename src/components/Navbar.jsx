@@ -99,40 +99,29 @@ export default function Navbar() {
                 ?.scrollIntoView({ behavior: "smooth" });
               setIsOpen(false);
             }}
-            // href="/#galeria"
-            // onClick={(e) => {
-            //   e.preventDefault();
-            //   const element = document.getElementById("galeria");
-            //   if (element) {
-            //     element.scrollIntoView({ behavior: "smooth" });
-            //   }
-
-            //   setIsOpen(false);
-            // }}
             className="hover:text-[#5683A0]"
           >
             Galería
           </a>
-          <a href="/contact" className="hover:text-[#5683A0]">
+          <a
+            href="/#contacto"
+            onClick={(e) => {
+              // Si estás en otra página, deja que el href navegue
+              if (window.location.pathname !== "/") {
+                return; // Deja que el navegador navegue a /#galeria
+              }
+              // Si estás en home, haz scroll suave
+              e.preventDefault();
+              document
+                .getElementById("contacto")
+                ?.scrollIntoView({ behavior: "smooth" });
+              setIsOpen(false);
+            }}
+            className="hover:text-[#5683A0]"
+          >
             Contacto/Ubicaciones
           </a>
         </div>
-
-        {/* --- Carrito + búsqueda (derecha en lg) --- */}
-        {/* <div className="hidden lg:flex items-center space-x-4">
-          <input
-            type="text"
-            placeholder="Buscar..."
-            className="px-3 py-1 rounded-md text-black bg-blue-100"
-          />
-          <button className="relative ">
-            <FaCartShopping className="text-2xl" />
-
-            <span className="absolute -top-2 -right-3 bg-red-500 text-xs px-1.5 py-0.5 rounded-full ">
-              0
-            </span>
-          </button>
-        </div> */}
       </div>
 
       {/* --- Mobile: menú desplegable --- */}
@@ -175,13 +164,6 @@ export default function Navbar() {
         >
           Contacto
         </a>
-
-        {/* <button className="relative mt-2">
-          <FaCartShopping className="text-2xl" />
-          <span className="absolute -top-2 -right-3 bg-red-500 text-xs px-1.5 py-0.5 rounded-full">
-            0
-          </span>
-        </button> */}
       </div>
     </nav>
   );

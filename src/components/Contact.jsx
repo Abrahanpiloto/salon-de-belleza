@@ -30,7 +30,7 @@ export default function Contact() {
 
           {/* COLUMN 2  */}
           <div className="flex-1 order-1 lg:order-2 flex flex-col items-end justify-center gap-8">
-            <h2 className="text-4xl text-white text-end">
+            <h2 className="text-4xl text-amber-200 text-end">
               O puedes revisar nuestro calendario y reservar una cita aqui
             </h2>
             <a
