@@ -36,7 +36,7 @@ export default function Contact() {
             <a
               href="/reservar"
               className="px-16 py-3 bg-[#7BF1A8] text-black text-2xl rounded-4xl 
-               hover:bg-white transition shadow-lg cursor-pointer"
+               hover:bg-white transition shadow-lg cursor-pointer btn-shine "
             >
               Agenda aquí
             </a>
