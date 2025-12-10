@@ -1,2 +1,41 @@
 @import "tailwindcss";
 @import "../src/styles/fullCalendar.css";
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  35% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.btn-shine {
+  position: relative;
+  overflow: hidden;
+  z-index: 1; /* Establish stacking context if needed */
+}
+
+.btn-shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  /* Gradiente más fuerte y definido para que se note en todo el botón */
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.9) 50%,
+    transparent 100%
+  );
+  transform: skewX(-20deg);
+  /* Animación más lenta: 6s total, el brillo pasa suavemente */
+  animation: shine 4s infinite ease-out;
+  pointer-events: none;
+  z-index: 10;
+}

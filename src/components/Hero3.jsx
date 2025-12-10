@@ -18,15 +18,7 @@ const Hero3 = () => {
       <div className="absolute inset-0 bg-black/60"></div>
 
       {/* LOGO SOLO EN MÓVIL - CENTRADO EN PANTALLA */}
-      {/* <div className="md:hidden absolute top-8 left-1/2 -translate-x-1/2 z-20 pointer-events-none w-full">
-        <div className="w-86 h-32 mx-auto">
-          <img
-            src="/logo-mobile.png"
-            alt="Logotipo del salón"
-            className="w-full h-full object-contain"
-          />
-        </div>
-      </div> */}
+    
 
       {/* Contenedor principal con Grid para desktop */}
       <div className="relative z-10 h-full flex items-center px-6 md:px-12 lg:px-26">
@@ -72,7 +64,7 @@ const Hero3 = () => {
                 <a
                   href="/reservar"
                   className="px-16 py-3 bg-[#7BF1A8] text-black text-2xl rounded-4xl 
-               hover:bg-white transition shadow-lg cursor-pointer"
+               hover:bg-white transition shadow-lg cursor-pointer btn-shine"
                 >
                   Agenda aquí
                 </a>
@@ -96,7 +88,7 @@ const Hero3 = () => {
               <a
                 href="/reservar"
                 className="px-16 py-3 bg-[#7BF1A8] text-black text-2xl rounded-4xl 
-               hover:bg-white transition shadow-lg cursor-pointer"
+               hover:bg-white transition shadow-lg cursor-pointer btn-shine"
               >
                 Agenda aquí
               </a>
