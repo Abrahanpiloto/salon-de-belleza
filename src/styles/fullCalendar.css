@@ -12,7 +12,7 @@
 
   /* número del día */
   .fc .fc-daygrid-day-number {
-    font-size: 0.65rem;
+    font-size: 1rem;
   }
 }
 
@@ -28,12 +28,26 @@
   .fc .fc-toolbar-chunk {
     display: flex;
     gap: 0.25rem;
+    
+  }
+
+  .fc .fc-timeGridWeek-button {
+    display: none;
+  }
+
+  .fc .fc-timeGridDay-button {
+    display: none;
+  }
+
+  .fc .fc-dayGridMonth-button {
+    display: none;
   }
 }
 @media (max-width: 640px) {
   /* celda del día */
   .fc .fc-daygrid-day-frame {
     padding: 2px;
+    
   }
 
   /* contenido interno */
