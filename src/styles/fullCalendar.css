@@ -1,13 +1,22 @@
 /* SOLO mobile */
+.fc .fc-timeGridWeek-button {
+  display: none;
+}
+
+.fc .fc-timeGridDay-button {
+  display: none;
+}
 @media (max-width: 640px) {
   /* título (Mes Año) */
   .fc .fc-toolbar-title {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+    text-transform: capitalize;
   }
 
   /* días de la semana (Mon, Tue...) */
   .fc .fc-col-header-cell-cushion {
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
   /* número del día */
@@ -19,16 +28,15 @@
 @media (max-width: 640px) {
   /* botones */
   .fc .fc-button {
-    padding: 0.25rem 0.4rem;
-    font-size: 0.65rem;
+    padding: 0.5rem 0.3rem;
+    font-size: 1rem;
     line-height: 1;
   }
 
   /* grupo de botones */
   .fc .fc-toolbar-chunk {
     display: flex;
-    gap: 0.25rem;
-    
+    gap: 0.01rem;
   }
 
   .fc .fc-timeGridWeek-button {
@@ -47,7 +55,6 @@
   /* celda del día */
   .fc .fc-daygrid-day-frame {
     padding: 2px;
-    
   }
 
   /* contenido interno */

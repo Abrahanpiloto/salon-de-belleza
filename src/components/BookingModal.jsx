@@ -1,12 +1,14 @@
 import { useEffect, useState } from "react";
+import { saveAppointment } from "../services/appointmentsService";
+import toast from "react-hot-toast";
 
 export default function BookingModal({ isOpen, date, onClose }) {
   const [timeSlots, setTimeSlots] = useState([]);
   const [selectedSlot, setSelectedSlot] = useState(null);
   const [form, setForm] = useState({
-    nombre: "",
-    apellido: "",
-    telefono: "",
+    name: "",
+    lastName: "",
+    phone: "",
     email: "",
   });
 
@@ -30,14 +32,37 @@ export default function BookingModal({ isOpen, date, onClose }) {
     setTimeSlots(slots);
     setSelectedSlot(null);
     setForm({
-      nombre: "",
-      apellido: "",
-      telefono: "",
+      name: "",
+      lastName: "",
+      phone: "",
       email: "",
     });
   }, [isOpen]);
 
   if (!isOpen) return null;
+
+  const handleConfirm = async () => {
+    try {
+      const appointmentData = {
+        date,
+        time: selectedSlot.start,
+        name: form.name,
+        lastName: form.lastName,
+        phone: form.phone,
+        email: form.email,
+      };
+
+      await toast.promise(saveAppointment(appointmentData), {
+        loading: "Guardando cita...",
+        success: "¡Cita guardada exitosamente!",
+        error: "No se pudo guardar la cita. Intenta nuevamente.",
+      });
+      onClose();
+    } catch (error) {
+      console.error("Error al confirmar la cita:", error);
+      alert("No se pudo guardar la cita. Intenta otra vez.");
+    }
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex">
@@ -74,7 +99,7 @@ export default function BookingModal({ isOpen, date, onClose }) {
                     disabled={isDisabled}
                     onClick={() => setSelectedSlot(slot)}
                     className={`
-                      border rounded-md py-2 text-sm transition
+                      border rounded-2xl py-2 text-sm transition
                       ${
                         isDisabled
                           ? "bg-gray-100 text-gray-400 cursor-not-allowed"
@@ -100,8 +125,8 @@ export default function BookingModal({ isOpen, date, onClose }) {
                 required
                 type="text"
                 placeholder="Nombre"
-                value={form.nombre}
-                onChange={(e) => setForm({ ...form, nombre: e.target.value })}
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
                 className="w-full border rounded-md px-3 py-2 text-sm"
               />
 
@@ -109,8 +134,8 @@ export default function BookingModal({ isOpen, date, onClose }) {
                 required
                 type="text"
                 placeholder="Apellido"
-                value={form.apellido}
-                onChange={(e) => setForm({ ...form, apellido: e.target.value })}
+                value={form.lastName}
+                onChange={(e) => setForm({ ...form, lastName: e.target.value })}
                 className="w-full border rounded-md px-3 py-2 text-sm"
               />
 
@@ -118,8 +143,8 @@ export default function BookingModal({ isOpen, date, onClose }) {
                 required
                 type="tel"
                 placeholder="Teléfono"
-                value={form.telefono}
-                onChange={(e) => setForm({ ...form, telefono: e.target.value })}
+                value={form.phone}
+                onChange={(e) => setForm({ ...form, phone: e.target.value })}
                 className="w-full border rounded-md px-3 py-2 text-sm"
               />
 
@@ -137,8 +162,11 @@ export default function BookingModal({ isOpen, date, onClose }) {
         {/* Footer */}
         <div className="p-4 border-t">
           <button
-            disabled={!selectedSlot || !form.nombre || !form.telefono}
-            className="w-full rounded-md bg-gray-900 text-white py-2 disabled:opacity-50 cursor-pointer"
+            onClick={handleConfirm}
+            disabled={
+              !selectedSlot || !form.name || !form.phone || !form.lastName
+            }
+            className="w-full rounded-4xl bg-gray-900 text-white py-2 disabled:opacity-50 cursor-pointer"
           >
             Confirmar cita
           </button>

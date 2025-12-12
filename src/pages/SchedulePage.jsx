@@ -16,14 +16,14 @@ const SchedulePage = () => {
     <LayoutMain>
       <div className="px-4 py-28 lg:py-24 min-h-screen bg-gray-900">
         {/* contenedor principal */}
-        <div className="max-w-7xl mx-auto flex gap-6">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
           {/* columna izquierda: calendario */}
           <div className="w-full lg:w-2/3">
             <Calendar onDateSelect={handleDateClick} />
           </div>
 
           {/* columna derecha: modal */}
-          <div className="hidden lg:block w-1/3 rounded-lg ">
+          <div className=" lg:block w-1/3 rounded-lg ">
             {/* aquí luego irá tu modal */}
             <BookingModal
               isOpen={isModalOpen}

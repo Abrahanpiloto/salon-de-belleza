@@ -17,5 +17,6 @@ export async function saveAppointment(appointmentData) {
     return docRef.id;
   } catch (error) {
     console.error("Error al guardar la cita:", error);
+    throw error;
   }
 }
