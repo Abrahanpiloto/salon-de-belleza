@@ -44,7 +44,7 @@ const Locations = [
 const LocationList = () => {
   return (
     <div className="lg:max-w-3xl  max-w-xs">
-      <h1 className="text-white text-3xl mb-4 mt-12">Ubícanos en:</h1>
+      <h1 className="text-white text-3xl mb-4 lg:mt-12">Ubícanos en:</h1>
       <ul className="grid  lg:grid-cols-3 gap-6">
         {Locations.map((loc) => (
           <li key={loc.id} className="flex flex-col lg:max-w-3xl">

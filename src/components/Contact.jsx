@@ -3,7 +3,7 @@ import LocationList from "./LocationList";
 
 export default function Contact() {
   return (
-    <section id="contacto" className="min-h-screen relative overflow-hidden">
+    <section id="contacto" className="min-h-screen relative overflow-hidden ">
       {/* Fondo SOLO en desktop */}
       <div className=" absolute inset-0 -z-10">
         <img
@@ -22,21 +22,21 @@ export default function Contact() {
         </header>
 
         {/* CONTENEDOR PRINCIPAL: MOBILE = columna, DESKTOP = fila */}
-        <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto p-6 gap-18">
+        <div className="flex flex-col lg:flex-row w-full max-w-7xl mx-auto p-6 gap-10 lg:mt-32">
           {/* COLUMN 1 - LocationList (izquierda en desktop, abajo en mobile) */}
           <div className="flex-1 order-2 lg:order-1">
             <LocationList />
           </div>
 
           {/* COLUMN 2  */}
-          <div className="flex-1 order-1 lg:order-2 flex flex-col items-end justify-center gap-8">
-            <h2 className="text-4xl text-amber-200 text-end">
+          <div className="flex-1 order-1 lg:order-2 flex flex-col items-end justify-center">
+            <h2 className="lg:text-4xl text-3xl text-amber-200 text-end mb-4">
               Reserva una cita aquí
             </h2>
             <a
               href="/reservar"
               className="px-16 py-3 bg-[#7BF1A8] text-black text-2xl rounded-4xl 
-               hover:bg-white transition shadow-lg cursor-pointer btn-shine "
+               hover:bg-white transition shadow-lg cursor-pointer btn-shine"
             >
               Agenda aquí
             </a>

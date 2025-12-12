@@ -158,11 +158,29 @@ export default function Navbar() {
         >
           Galería
         </a>
-        <a
+        {/* <a
           href="/contact"
           className="block text-amber-200 hover:text-white py-2"
         >
           Contacto
+        </a> */}
+        <a
+          href="/#contacto"
+          onClick={(e) => {
+            // Si estás en otra página, deja que el href navegue
+            if (window.location.pathname !== "/") {
+              return; // Deja que el navegador navegue a /#galeria
+            }
+            // Si estás en home, haz scroll suave
+            e.preventDefault();
+            document
+              .getElementById("contacto")
+              ?.scrollIntoView({ behavior: "smooth" });
+            setIsOpen(false);
+          }}
+          className="text-amber-200"
+        >
+          Contacto/Ubicaciones
         </a>
       </div>
     </nav>
