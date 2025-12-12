@@ -30,7 +30,7 @@ const ServicesGrid = () => {
             CABELLO
           </p>
           <div className="w-22 h-0.5 bg-amber-300 mt-3"></div>
-          <button className="mt-6 text-xs lg:text-lg cursor-pointer lg:w-xs bg-amber-300 text-black font-semibold px-4 py-2 hover:bg-amber-400 transition">
+          <button className="mt-6 text-xs lg:text-lg cursor-pointer lg:w-xs bg-amber-300 text-black font-semibold px-4 py-2 hover:bg-amber-400 transition rounded-4xl">
             CONOCELOS
           </button>
         </div>
@@ -38,7 +38,7 @@ const ServicesGrid = () => {
         {/* ----- CUADRO 3 IMAGEN ALARGADA ----- */}
         <div className="bg-blue-400 row-span-2">
           <img
-            src="/propietaria-mobile.jpg"
+            src="/propietaria-mobile.webp"
             alt="Sandra Haro propietaria"
             className="w-full h-full object-cover"
           />
@@ -54,7 +54,7 @@ const ServicesGrid = () => {
             PROFESSIONAL
           </p> */}
           <div className="w-22 h-0.5 bg-amber-300 mt-3"></div>
-          <button className="mt-6 text-xs lg:text-lg cursor-pointer lg:w-xs bg-amber-300 text-black font-semibold px-4 py-2 hover:bg-amber-400 transition">
+          <button className="mt-6 text-xs lg:text-lg cursor-pointer lg:w-xs bg-amber-300 text-black font-semibold px-4 py-2 hover:bg-amber-400 transition rounded-4xl">
             CONOCELOS
           </button>
         </div>
