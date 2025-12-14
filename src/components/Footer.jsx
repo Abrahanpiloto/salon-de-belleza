@@ -7,9 +7,9 @@ export default function Footer() {
         Desarrollado por <br />
         <a
           href="https://abrahanpiloto.vercel.app"
-          className="text-blue-500 text-md italic"
+          className="text-[#FC7025] text-md"
         >
-          Abrahan Piloto
+          PixelDev.
         </a>
       </div>
       <div className="flex-1 text-center text-md text-amber-200">
