@@ -17,34 +17,34 @@ const Aboutme = () => {
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* === DESKTOP: Imagen de fondo + texto completo a la izquierda === */}
-      <div className="hidden md:flex items-center min-h-screen py-16 px-16">
+      <div className="hidden md:flex items-center min-h-screen py-16 px-2">
         <img
-          src="/propietaria-desktop2.jpg"
+          src="/propietaria-desktop2.webp"
           alt="Sandra Haro, fundadora de Sandra Haro, en uno de sus salones"
           className="absolute inset-0 w-full h-full object-cover -z-10"
         />
-        <div className="relative z-10 max-w-lg bg-black opacity-90 p-10 rounded-lg text-white space-y-6 ml-8 lg:ml-20">
-          <h1 className="text-3xl lg:text-4xl font-light text-amber-200 leading-tight">
+        <div className="relative z-10 max-w-xl p-10 rounded-lg text-white space-y-6 ml-2">
+          <h1 className="text-3xl lg:text-4xl font-bold text-amber-200 leading-tight">
             ¡Conoce a Sandra, la visión detrás de Sandra Haro!
           </h1>
-          <p className="text-md leading-relaxed text-gray-100">
+          <p className="text-md leading-relaxed text-gray-900">
             {fullText.split("\n")[0]}
           </p>
-          <p className="text-md leading-relaxed text-gray-100">
+          <p className="text-md leading-relaxed text-gray-900">
             {fullText.split("\n")[1]}
           </p>
-          <p className="text-md leading-relaxed text-gray-100">
+          <p className="text-md leading-relaxed text-gray-900">
             {fullText.split("\n")[2]}
           </p>
-          <p className="text-md leading-relaxed text-gray-100">
+          <p className="text-md leading-relaxed text-gray-900">
             {fullText.split("\n")[3]}
-            <span className="block mt-2 italic text-amber-200">
+            <span className="block mt-2 italic text-gray-800">
               "Tu belleza es única, y nosotras la celebramos", dice ella.
             </span>
           </p>
-          <p className="text-lg leading-relaxed text-gray-100 font-medium">
+          <p className="text-lg leading-relaxed text-gray-800 font-medium">
             {fullText.split("\n")[4]}
-            <span className="block mt-3 text-amber-200 font-bold">
+            <span className="block mt-3 text-gray-800 font-bold">
               Ven, únete a esta historia de éxito. ¡Tu transformación empieza
               aquí!
             </span>
